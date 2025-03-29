@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+
+@import "tailwindcss";
+@import "./font.css";
+
+:root {
+	--background: #ffffff;
+	--foreground: #171717;
+
+	--swiper-scrollbar-bg-color: rgba(255, 255, 255, 0.1);
+	--swiper-scrollbar-drag-bg-color: rgba(255, 255, 255, 0.5);
+}
+
+@theme {
+	--font-roboto: "Roboto", sans-serif;
+	--font-kaushan-script: "Kaushan Script", cursive;
+	--color-background: var(--background);
+	--color-foreground: var(--foreground);
+	--font-sans: var(--font-geist-sans);
+	--font-mono: var(--font-geist-mono);
+	--color-secondary: #edc63e;
+}
+
+@utility container {
+	margin-inline: auto;
+}
+
+body {
+	background: var(--background);
+	color: var(--foreground);
+	font-family: "Roboto", sans-serif;
+}
