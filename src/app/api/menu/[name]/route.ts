@@ -1,5 +1,5 @@
-import { IResAPI } from "@/app/types/data";
-import { IMenu } from "@/app/types/menu";
+import { IResAPI } from "@/types/data";
+import { IMenu } from "@/types/menu";
 import { NextResponse } from "next/server";
 
 export async function GET(_: Request, { params }: { params: { name: string } }) {

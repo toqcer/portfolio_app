@@ -1,6 +1,6 @@
 import NavLink from "@/components/NavLink";
-import "./css/globals.css";
-import { getNavMenu } from "./utils/fetching";
+import "@/css/globals.css";
+import { getNavMenu } from "@/utils/fetching";
 import "swiper/css";
 import "swiper/css/scrollbar";
 

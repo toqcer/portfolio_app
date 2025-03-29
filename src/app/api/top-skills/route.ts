@@ -1,4 +1,4 @@
-import { ICategorySkill, IResAPI } from "@/app/types/data";
+import { ICategorySkill, IResAPI } from "@/types/data";
 import { NextResponse } from "next/server";
 
 export async function GET() {

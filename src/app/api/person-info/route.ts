@@ -1,4 +1,4 @@
-import { IPersonInfo, IResAPI } from "@/app/types/data";
+import { IPersonInfo, IResAPI } from "@/types/data";
 import { NextResponse } from "next/server";
 
 export async function GET() {

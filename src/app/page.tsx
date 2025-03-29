@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getNavMenu, getPersonInfo, getTopSkills } from "./utils/fetching";
+import { getNavMenu, getPersonInfo, getTopSkills } from "@/utils/fetching";
 import { MingcuteArrowsDownFill } from "@/components/MingcuteArrowsDownFill";
 import SkillSlider from "@/components/SkillSlider";
 

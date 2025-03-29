@@ -1,4 +1,4 @@
-import { isHomeLink } from "@/app/utils/menu";
+import { isHomeLink } from "@/utils/menu";
 import Link, { LinkProps } from "next/link";
 
 const NavLink = ({ href, label, useHoverUnderline = false }: { useHoverUnderline?: boolean; href: LinkProps["href"]; label: string }) => {

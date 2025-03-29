@@ -1,7 +1,7 @@
 "use client";
 
 import Link, { LinkProps } from "next/link";
-import { MingcuteArrowsDownFill } from "../MingcuteArrowsDownFill";
+import { MingcuteArrowsDownFill } from "@/components/MingcuteArrowsDownFill";
 
 const BtnDown = ({ label, href }: { label: string; href: string | LinkProps["href"] }) => {
 	return (

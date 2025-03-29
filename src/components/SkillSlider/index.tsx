@@ -1,6 +1,6 @@
 "use client";
 
-import { IDataSkill } from "@/app/types/data";
+import { IDataSkill } from "@/types/data";
 import Image from "next/image";
 import { PropsWithChildren } from "react";
 import { Mousewheel, Scrollbar } from "swiper/modules";

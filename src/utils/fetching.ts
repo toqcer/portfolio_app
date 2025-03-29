@@ -1,5 +1,5 @@
-import { ICategorySkill, IPersonInfo, IResAPI } from "../types/data";
-import { IMenu } from "../types/menu";
+import { ICategorySkill, IPersonInfo, IResAPI } from "@/types/data";
+import { IMenu } from "@/types/menu";
 
 export async function getNavMenu() {
 	"use server";
