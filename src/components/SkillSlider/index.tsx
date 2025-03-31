@@ -2,6 +2,7 @@
 
 import { IDataSkill } from "@/types/data";
 import Image from "next/image";
+import Link from "next/link";
 import { PropsWithChildren } from "react";
 import { Mousewheel, Scrollbar } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -31,11 +32,16 @@ const SkillSlider = ({
 		>
 			{datas.map(data => (
 				<SwiperSlide key={data.name}>
-					<div className="flex flex-col items-center justify-center gap-4">
-						<div className="h-16 w-16 relative">
-							<Image src={data.image} alt={data.name} fill />
-						</div>
-						<p className="text-xl text-white">{data.name}</p>
+					<div className="flex flex-col h-full items-center justify-center gap-4">
+						<Image src={data.image} alt={data.name} height={60} width={60} />
+
+						{data.link ? (
+							<Link className="text-xl text-white" href={data.link}>
+								{data.name}
+							</Link>
+						) : (
+							<p className="text-xl text-white">{data.name}</p>
+						)}
 					</div>
 				</SwiperSlide>
 			))}

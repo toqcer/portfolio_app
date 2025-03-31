@@ -19,6 +19,13 @@
 	--font-sans: var(--font-geist-sans);
 	--font-mono: var(--font-geist-mono);
 	--color-secondary: #edc63e;
+	--color-primary: #242424;
+	--color-primary-hover: #2a2a2a;
+	--color-orange: #df9e55;
+	--color-aqua: #daebf8;
+
+	--shadow-btn: 1px 2px 3px rgba(35, 35, 35, 0.4);
+	--shadow-btn-focus: 1px 1px 3px rgba(35, 35, 35, 0.2);
 }
 
 @utility container {

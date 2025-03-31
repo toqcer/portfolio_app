@@ -13,9 +13,22 @@ export interface IDataSkill {
 	name: string;
 	image: string;
 	year_of_experience: number;
+	link?: string;
 }
 
 export interface ICategorySkill {
 	label: string;
 	data: IDataSkill[];
+}
+
+export interface IQuickPoint {
+	id: string;
+	label: string;
+}
+
+export interface IProject {
+	title: string;
+	link?: string | URL;
+	description: TrustedHTML | string;
+	quick_point: IQuickPoint[];
 }

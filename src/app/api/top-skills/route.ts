@@ -9,19 +9,16 @@ export async function GET() {
 				label: "Programming Language",
 				data: [
 					{
-						name: "PHP",
-						image: "/images/php.webp",
-						year_of_experience: 3,
-					},
-					{
 						image: "/images/js.webp",
 						name: "Javascript",
 						year_of_experience: 3,
+						link: "https://www.javascript.com",
 					},
 					{
 						image: "/images/ts.webp",
 						name: "Typescript",
 						year_of_experience: 3,
+						link: "https://www.typescriptlang.org",
 					},
 				],
 			},
@@ -29,14 +26,50 @@ export async function GET() {
 				label: "Framework",
 				data: [
 					{
-						image: "/images/nextjs.webp",
+						image: "/images/nextjs.svg",
 						name: "NextJS",
 						year_of_experience: 3,
+						link: "https://nextjs.org",
 					},
 					{
 						image: "/images/laravel.webp",
 						name: "Laravel",
 						year_of_experience: 3,
+						link: "https://laravel.com",
+					},
+				],
+			},
+			{
+				label: "CSS",
+				data: [
+					{
+						image: "/images/tailwind.svg",
+						name: "Tailwind CSS",
+						year_of_experience: 3,
+						link: "https://tailwindcss.com",
+					},
+					{
+						image: "/images/mui.webp",
+						name: "Material UI",
+						year_of_experience: 3,
+						link: "https://mui.com",
+					},
+				],
+			},
+			{
+				label: "UI Design",
+				data: [
+					{
+						image: "/images/figma.webp",
+						name: "Figma",
+						year_of_experience: 3,
+						link: "https://www.figma.com",
+					},
+					{
+						image: "/images/sketch.png",
+						name: "Sketch",
+						year_of_experience: 1,
+						link: "https://www.sketch.com",
 					},
 				],
 			},
