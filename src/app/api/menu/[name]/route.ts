@@ -2,7 +2,8 @@ import { IResAPI } from "@/types/data";
 import { IMenu } from "@/types/menu";
 import { NextResponse } from "next/server";
 
-export async function GET(_: Request, { params }: { params: { name: string } }) {
+export async function GET(_: Request, props: { params: Promise<{ name: string }> }) {
+	const { name } = await props.params;
 	return NextResponse.json<IResAPI<IMenu[]>>({
 		status: 200,
 		data: [
@@ -15,7 +16,7 @@ export async function GET(_: Request, { params }: { params: { name: string } }) 
 				href: "#creation",
 			},
 			{
-				label: params.name,
+				label: name,
 				href: "#",
 			},
 			{

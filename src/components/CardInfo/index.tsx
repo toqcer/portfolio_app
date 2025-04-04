@@ -3,12 +3,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import Btn from "../Btn";
+import { ICardInfo } from "./types";
 
-const CardInfo = ({ title, desc, href, subinfo }: { title: string; href?: string; subinfo: string[]; desc: TrustedHTML | string }) => {
+const CardInfo = ({ title, desc, href, subinfo, cover }: ICardInfo) => {
 	return (
 		<figure>
 			<div className="relative h-[200px]">
-				<Image src="/images/acv.png" fill alt="Astra Car Valuation" />
+				<Image src={cover} fill alt="Astra Car Valuation" />
 			</div>
 			<figcaption className="bg-orange text-white p-3">
 				{href ? (

@@ -1,9 +1,10 @@
 "use client";
 
-import Link, { LinkProps } from "next/link";
+import Link from "next/link";
 import { MingcuteArrowsDownFill } from "@/components/MingcuteArrowsDownFill";
+import { IBtnDown } from "./types";
 
-const BtnDown = ({ label, href }: { label: string; href: string | LinkProps["href"] }) => {
+const BtnDown = ({ label, href }: IBtnDown) => {
 	return (
 		<Link href={href} className="btn btn-secondary">
 			{label}

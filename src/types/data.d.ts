@@ -27,8 +27,15 @@ export interface IQuickPoint {
 }
 
 export interface IProject {
+	cover: string;
 	title: string;
 	link?: string | URL;
 	description: TrustedHTML | string;
 	quick_point: IQuickPoint[];
+}
+
+export interface ITimelinePersonal {
+	title: string;
+	description: string;
+	time: string;
 }

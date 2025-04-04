@@ -32,6 +32,12 @@
 	margin-inline: auto;
 }
 
+@utility link-blue {
+	a {
+		color: #2074b3;
+	}
+}
+
 body {
 	background: var(--background);
 	color: var(--foreground);

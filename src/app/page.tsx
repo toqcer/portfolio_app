@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getNavMenu, getPersonInfo, getTopSkills } from "@/utils/fetching";
+import { getNavMenu, getPersonInfo, getProjects, getTimeline, getTopSkills } from "@/utils/fetching";
 import { MingcuteArrowsDownFill } from "@/components/MingcuteArrowsDownFill";
 import SkillSlider from "@/components/SkillSlider";
 import HeadingSection from "@/components/HeadingSection";
@@ -7,7 +7,13 @@ import SectionFull from "@/components/SectionFull";
 import CardInfo from "@/components/CardInfo";
 
 export default async function Home() {
-	const [menus, personInfo, topSkills] = await Promise.all([getNavMenu(), getPersonInfo(), getTopSkills()]);
+	const [menus, personInfo, topSkills, projects, timelines] = await Promise.all([
+		getNavMenu(),
+		getPersonInfo(),
+		getTopSkills(),
+		getProjects(),
+		getTimeline(),
+	]);
 
 	return (
 		<div className="snap-y snap-mandatory  overflow-scroll h-screen scroll-smooth">
@@ -46,13 +52,28 @@ export default async function Home() {
 
 				<div className="container">
 					<div className="grid grid-cols-3 gap-4">
-						<CardInfo
-							title="Astra Car Valuation"
-							href="https://acv.astra.co.id"
-							subinfo={["pengerjaan team", "desain dan API disediakan", "atas nama PT Serasi Autoraya"]}
-							desc="<p>Jasa inspeksi mobil terpercaya</p>"
-						/>
+						{projects.map(project => (
+							<CardInfo
+								key={project.title.replaceAll(" ", "-")}
+								title={project.title}
+								href={project.link}
+								subinfo={project.quick_point.map(point => point.label)}
+								desc={project.description}
+								cover={project.cover}
+							/>
+						))}
 					</div>
+				</div>
+			</SectionFull>
+			<SectionFull id={String(menus[2].href)} className="bg-primary text-white">
+				<HeadingSection title="About Me" />
+
+				<div className="container">
+					{timelines.map(timeline => (
+						<div key={timeline.title.replaceAll(" ", "-")}>
+							<div dangerouslySetInnerHTML={{ __html: timeline.title }} className="link-blue" />
+						</div>
+					))}
 				</div>
 			</SectionFull>
 		</div>

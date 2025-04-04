@@ -6,6 +6,7 @@ export async function GET() {
 		status: 200,
 		data: [
 			{
+				cover: `${process.env.URL_APP}/images/acv.png`,
 				title: "Astra Car Valuation",
 				link: "https://acv.astra.co.id",
 				description: "<p>Jasa inspeksi mobil terpercaya</p>",
@@ -21,6 +22,26 @@ export async function GET() {
 					{
 						id: crypto.randomUUID(),
 						label: "atas nama PT Serasi Autoraya",
+					},
+				],
+			},
+			{
+				cover: `${process.env.URL_APP}/images/gaia.png`,
+				title: "GAIA Hotel Bandung",
+				link: "https://thegaiabandung.com",
+				description: "<p>GAIA Hotel Reservation</p>",
+				quick_point: [
+					{
+						id: crypto.randomUUID(),
+						label: "pengerjaan team",
+					},
+					{
+						id: crypto.randomUUID(),
+						label: "integrasi antara HTML dengan laravel",
+					},
+					{
+						id: crypto.randomUUID(),
+						label: "atas nama PT Definiite Maji Arsana",
 					},
 				],
 			},
