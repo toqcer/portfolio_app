@@ -2,6 +2,7 @@
 
 @import "tailwindcss";
 @import "./font.css";
+@import "animate.css";
 
 :root {
 	--background: #ffffff;
@@ -18,12 +19,16 @@
 	--color-foreground: var(--foreground);
 	--font-sans: var(--font-geist-sans);
 	--font-mono: var(--font-geist-mono);
+	--color-1d1d1d: #1d1d1d;
 	--color-secondary: #edc63e;
 	--color-primary: #242424;
 	--color-primary-hover: #2a2a2a;
+	--color-30a2: #30a2c6;
 	--color-orange: #df9e55;
+	--color-db92: #db9240;
 	--color-aqua: #daebf8;
-
+	--color-373737: #373737;
+	--spacing-100px: 100px;
 	--shadow-btn: 1px 2px 3px rgba(35, 35, 35, 0.4);
 	--shadow-btn-focus: 1px 1px 3px rgba(35, 35, 35, 0.2);
 }
@@ -32,9 +37,15 @@
 	margin-inline: auto;
 }
 
+@layer utilities {
+	.scrollbar-hide-color::-webkit-scrollbar-track {
+		background-color: red;
+	}
+}
+
 @utility link-blue {
 	a {
-		color: #2074b3;
+		color: #64b0e8;
 	}
 }
 

@@ -10,22 +10,27 @@ export async function GET(_: Request, props: { params: Promise<{ name: string }>
 			{
 				label: "Passionate",
 				href: "#skills",
+				isHomeLink: false,
 			},
 			{
 				label: "Best Creation",
 				href: "#creation",
+				isHomeLink: false,
 			},
 			{
 				label: name,
-				href: "#",
+				href: "/",
+				isHomeLink: true,
 			},
 			{
 				label: "About Me",
 				href: "#about",
+				isHomeLink: false,
 			},
 			{
 				label: "Find Me",
 				href: "#contact",
+				isHomeLink: false,
 			},
 		],
 	});

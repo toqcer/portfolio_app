@@ -23,8 +23,8 @@ const SkillSlider = ({
 			className={className}
 			spaceBetween={spaceBetween}
 			slidesPerView={slidesPerView}
-			onSlideChange={() => console.log("slide change")}
-			onSwiper={swiper => console.log(swiper)}
+			onSlideChange={() => {}}
+			onSwiper={() => {}}
 			scrollbar
 			mousewheel
 			direction="vertical"

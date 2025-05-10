@@ -17,7 +17,7 @@ const Btn = ({
 }>) => {
 	if (href) {
 		return (
-			<Link className={`${className} py-1 px-3  ${fullWidth ? "w-full" : ""}`} href={href}>
+			<Link className={`${className} py-1 px-3  ${fullWidth ? "w-full" : ""} ${isPill ? "rounded-full" : ""}`} href={href}>
 				{children}
 			</Link>
 		);

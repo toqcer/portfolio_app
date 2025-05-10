@@ -5,5 +5,6 @@ export interface ICardInfo {
 	href?: string | URL;
 	subinfo: string[];
 	desc: IProject["description"];
+	className?: string;
 	cover: IProject["cover"];
 }

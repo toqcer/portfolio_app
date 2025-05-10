@@ -7,7 +7,7 @@ export async function GET() {
 		data: {
 			full_name: "Bariq Dharmawan",
 			nickname: "Bariq",
-			slogan: "A front end developer who’s having an ambition of being useful for Indonesia and its citizens",
+			slogan: "A software engineer who’s having an ambition of being useful for Indonesia and its citizens",
 		},
 	});
 }

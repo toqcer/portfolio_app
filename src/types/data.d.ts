@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 export interface IResAPI<T> {
 	status: number;
 	data: T;
@@ -35,7 +37,16 @@ export interface IProject {
 }
 
 export interface ITimelinePersonal {
+	logo: string;
 	title: string;
 	description: string;
 	time: string;
+}
+
+export interface IProfileSocial {
+	title: string;
+	href: string;
+	iconName: ReactNode;
+	iconColor: `#${string}`;
+	isHalfWidth?: boolean;
 }
