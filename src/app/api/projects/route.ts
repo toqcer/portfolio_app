@@ -10,6 +10,16 @@ export async function GET() {
 				title: "Astra Car Valuation",
 				link: "https://acv.astra.co.id",
 				description: "<p>Jasa inspeksi mobil terpercaya</p>",
+				highlight: [
+					{
+						label: "Homebanner ACV",
+						asset: "/images/acv.png",
+					},
+					{
+						label: "Booking ACV",
+						asset: "/images/acv_booking_inspeksi.png",
+					},
+				],
 				quick_point: [
 					{
 						id: crypto.randomUUID(),
@@ -22,6 +32,22 @@ export async function GET() {
 					{
 						id: crypto.randomUUID(),
 						label: "atas nama PT Serasi Autoraya",
+					},
+				],
+				stack_tech: [
+					{
+						icon: "/images/MUI.webp",
+						link: "",
+						label: "Material UI",
+					},
+					{
+						icon: "/images/zustand.webp",
+						link: "",
+						label: "Zustand",
+					},
+					{
+						icon: "/images/nextjs.webp",
+						label: "Next JS",
 					},
 				],
 			},
@@ -42,6 +68,23 @@ export async function GET() {
 					{
 						id: crypto.randomUUID(),
 						label: "atas nama PT Definiite Maji Arsana",
+					},
+				],
+
+				stack_tech: [
+					{
+						icon: "/images/MUI.webp",
+						link: "",
+						label: "Material UI",
+					},
+					{
+						icon: "/images/zustand.webp",
+						link: "",
+						label: "Zustand",
+					},
+					{
+						icon: "/images/nextjs.webp",
+						label: "Next JS",
 					},
 				],
 			},

@@ -5,7 +5,6 @@ import SkillSlider from "../SkillSlider";
 
 const SectionPassionate = async () => {
 	const [menus, topSkills] = await Promise.all([getNavMenu(), getTopSkills()]);
-	console.log("passionate", topSkills);
 
 	return (
 		<SectionFull id={String(menus[0].href)} className="bg-primary text-white">

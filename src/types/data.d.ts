@@ -28,12 +28,23 @@ export interface IQuickPoint {
 	label: string;
 }
 
+export interface IStackTechProject {
+	icon: string;
+	link?: string;
+	label: string;
+}
+
 export interface IProject {
 	cover: string;
 	title: string;
 	link?: string | URL;
 	description: TrustedHTML | string;
 	quick_point: IQuickPoint[];
+	highlight?: {
+		label: string;
+		asset: string;
+	}[];
+	stack_tech: IStackTechProject[];
 }
 
 export interface ITimelinePersonal {
